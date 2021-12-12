@@ -12,7 +12,7 @@ public enum URLError: LocalizedError {
   case invalidResponse
   case addressUnreachable(URL)
   
-  var errorDescription: String? {
+  public var errorDescription: String? {
     switch self {
     case .invalidResponse:
         return "Sorry, invalid response"
@@ -27,7 +27,7 @@ public enum DatabaseError: LocalizedError {
   case invalidInstance
   case requestFailed
   
-  var errorDescription: String? {
+  public var errorDescription: String? {
     switch self {
     case .invalidInstance: return "Invalid Instance database"
     case .requestFailed: return "Sorry, failed request"
