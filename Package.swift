@@ -23,10 +23,10 @@ let package = Package(
         .target(
             name: "Core",
             dependencies: [
-                .product(name: "RealmSwift", package: "Realm"),
+                .product(name: "RealmSwift", package: "Realm")
             ]),
         .testTarget(
             name: "CoreTests",
-            dependencies: ["Core"]),
+            dependencies: ["Core"])
     ]
 )
